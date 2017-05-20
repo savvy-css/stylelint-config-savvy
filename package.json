@@ -1,0 +1,50 @@
+{
+  "name": "@savvy-css/stylelint-config-savvy",
+  "version": "0.0.0",
+  "description": "Savvy CSS config for stylelint",
+  "main": "index.js",
+  "keywords": [
+    "stylelint",
+    "stylelint-config",
+    "savvy-css"
+  ],
+  "files": [
+    "index.js"
+  ],
+  "repository": "https://github.com/savvy-css/stylelint-config-savvy.git",
+  "author": "Brian Sipple <@Brian_Sipple>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^3.18.0",
+    "eslint-config-xo": "^0.18.1",
+    "eslint-config-xo-space": "^0.16.0",
+    "jest": "^19.0.2",
+    "npmpub": "^3.1.0",
+    "nsp": "^2.6.3",
+    "stylelint": "^7.9.0"
+  },
+  "peerDependencies": {
+    "stylelint": "^7.9.0"
+  },
+  "scripts": {
+    "pretest": "eslint **/*.js --fix",
+    "test": "jest",
+    "prepublish": "nsp check",
+    "release": "npmpub",
+    "watch": "jest --watch"
+  },
+  "eslintConfig": {
+    "extends": "xo-space",
+    "env": {
+      "jest": true,
+      "node": true
+    }
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "verbose": true,
+    "testMatch": [
+      "**/__tests__/**/*.test.js"
+    ]
+  }
+}
