@@ -1,6 +1,6 @@
 {
   "name": "@savvy-css/stylelint-config-savvy",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Savvy CSS config for stylelint",
   "main": "index.js",
   "keywords": [
