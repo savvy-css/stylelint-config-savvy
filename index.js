@@ -19,7 +19,11 @@ module.exports = {
     'property-no-vendor-prefix': true,
     'selector-list-comma-space-before': 'never',
     'selector-list-comma-newline-after': 'always',
-    'selector-no-id': true,
+
+    // Disallow using ids for styling
+    // https://github.com/stylelint/stylelint/blob/master/lib/rules/selector-max-id/README.md
+    'selector-max-id': 0,
+
     'string-quotes': 'double',
     'value-no-vendor-prefix': true
   }
