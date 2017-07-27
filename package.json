@@ -20,17 +20,17 @@
     "eslint-config-xo-space": "^0.16.0",
     "jest": "^19.0.2",
     "nsp": "^2.6.3",
-    "stylelint": "^7.9.0"
+    "stylelint": "^8.0.0"
   },
   "peerDependencies": {
-    "stylelint": "^7.9.0"
+    "stylelint": "^8.0.0"
   },
   "scripts": {
     "deploy": "np",
     "pretest": "eslint **/*.js --fix",
     "test": "jest --forceExit",
     "test:dev": "jest",
-    "prepublish": "nsp check",
+    "prepublishOnly": "nsp check",
     "watch": "jest --watch"
   },
   "eslintConfig": {
